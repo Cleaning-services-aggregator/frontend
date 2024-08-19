@@ -1,0 +1,73 @@
+.request__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    border-radius: 8px;
+    border: 1px solid #f5f5f5;
+    padding: 16px 16px 32px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    color: #545454;
+    width: 100%;
+}
+
+.info__text__chip {
+    background: #f2c231;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.request__card:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.09);
+}
+
+.request__id {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.top__row {
+    display: flex;
+    justify-content: space-between;
+    color: #9b9b9b;
+}
+
+.square {
+    font-size: 8px;
+    vertical-align: text-top;
+}
+
+.info__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__row {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    white-space: initial;
+    margin: 4px 0;
+}
+
+.info__row__chip {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    white-space: initial;
+}
+
+@media screen and (max-width: 480px) {
+    .request__id {
+        margin: auto;
+    }
+
+    .info__row,
+    .info__row__chip {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 128px 48px;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-left: 320px;
+    min-height: 100vh;
+}
+
+.wrapper h1 {
+    margin-bottom: 48px;
+}
+
+.requests__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    row-gap: 24px;
+    background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        margin-left: 0;
+        padding: 64px 16px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .requests__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
