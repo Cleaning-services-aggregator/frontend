@@ -178,4 +178,8 @@
     .info__row {
         font-size: 15px;
     }
+
+    .video__wrapper {
+        margin: 32px 0 0;
+    }
 }
