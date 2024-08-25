@@ -138,6 +138,16 @@ export function SingleRequest({ singleRequest }: SingleRequestProps) {
             </span>
           </div>
         </div>
+
+        <iframe
+          width="100%"
+          src={singleRequest.attachedVideo}
+          className={styles.video__wrapper}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
 
       {singleRequest.bids.length > 0 ? (
