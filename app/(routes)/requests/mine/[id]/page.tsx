@@ -10,8 +10,16 @@ type SingleRequestPageProps = {
   params: SingleRequestPageParams;
 };
 
+async function getRequests() {
+  return await get<RequestType[]>("/requests");
+}
+
 async function getSingleRequest(id: string) {
   return await get<RequestType>(`/requests/${id}`);
+}
+
+export async function generateStaticParams() {
+  return getRequests();
 }
 
 export default async function SingleRequestPage({

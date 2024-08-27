@@ -6,6 +6,8 @@ const config = dotenv.config();
 
 dotenvExpand.expand(config);
 
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+};
 
 export default nextConfig;

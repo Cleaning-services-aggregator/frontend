@@ -14,6 +14,14 @@ async function getSingleRequest(id: string) {
   return await get<RequestType>(`/requests/${id}`);
 }
 
+async function getRequests() {
+  return await get<RequestType[]>("/requests");
+}
+
+export async function generateStaticParams() {
+  return getRequests();
+}
+
 export default async function SingleRequestPage({
   params,
 }: SingleRequestPageProps) {
