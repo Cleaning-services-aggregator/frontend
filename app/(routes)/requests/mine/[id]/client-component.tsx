@@ -141,8 +141,7 @@ export function SingleRequest({ singleRequest }: SingleRequestProps) {
 
         <iframe
           width="100%"
-          src={singleRequest.attachedVideo}
-          className={styles.video__wrapper}
+          src="https://www.youtube.com/embed/4jnzf1yj48M?si=TYb2aG18BJu-EOfZ"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
